@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MEMO</title>
+
+<link id="favicon" rel="icon" type="image/png">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+body{
+    margin:0;
+    padding:20px;
+    background:#ededed;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    max-width:950px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    box-shadow:0 0 10px rgba(0,0,0,0.08);
+    overflow:hidden;
+}
+
+/* LOGO */
+
+.logo{
+    display:block;
+    margin:0 auto 10px;
+    width:180px;
+    max-width:100%;
+    cursor:pointer;
+}
+
+/* TITLE */
+
+h1{
+    text-align:center;
+    margin:0 0 25px;
+    font-size:42px;
+    letter-spacing:2px;
+    color:#000;
+}
+
+/* TABLE */
+
+.memo-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:35px;
+    table-layout:fixed;
+}
+
+.memo-table td{
+    border:1px solid #000;
+    padding:12px;
+    font-size:16px;
+    font-weight:bold;
+    word-wrap:break-word;
+}
+
+.label{
+    width:15%;
+    background:#f7f7f7;
+}
+
+.subject{
+    width:45%;
+}
+
+.date-label{
+    width:10%;
+    background:#f7f7f7;
+}
+
+.date{
+    width:20%;
+}
+
+/* CONTENT */
+
+.section{
+    font-size:18px;
+    line-height:1.8;
+    color:#111;
+    font-weight:bold;
+}
+
+.section p{
+    margin-bottom:20px;
+}
+
+/* NOTICE */
+
+.highlight{
+    background:#fff7df;
+    border-left:5px solid #f0a500;
+    padding:18px;
+    border-radius:4px;
+    margin-bottom:20px;
+}
+
+/* HINDI */
+
+.hindi-section{
+    margin-top:35px;
+    border-top:1px solid #bbb;
+    padding-top:20px;
+}
+
+/* SIGN AREA */
+
+.sign-area{
+    margin-top:60px;
+    width:240px;
+}
+
+/* STAMP */
+
+.stamp{
+    width:200px;
+    max-width:100%;
+    display:block;
+    margin-bottom:8px;
+
+    -webkit-user-drag:none;
+    user-drag:none;
+    -webkit-touch-callout:none;
+    user-select:none;
+}
+
+/* SIGNATURE */
+
+.signature-text{
+    font-size:18px;
+    font-weight:bold;
+    color:#000;
+    padding-left:15px;
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+
+.footer a{
+    color:#003366;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .container{
+        padding:18px;
+    }
+
+    .logo{
+        width:120px;
+    }
+
+    h1{
+        font-size:28px;
+        letter-spacing:1px;
+    }
+
+    .memo-table td{
+        font-size:13px;
+        padding:8px;
+    }
+
+    .label,
+    .subject,
+    .date-label,
+    .date{
+        width:auto;
+    }
+
+    .section{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .highlight{
+        padding:12px;
+        font-size:14px;
+    }
+
+    .sign-area{
+        margin-top:40px;
+        width:180px;
+    }
+
+    .stamp{
+        width:150px;
+    }
+
+    .signature-text{
+        font-size:15px;
+        padding-left:10px;
+    }
+
+    .footer{
+        font-size:12px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .memo-table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    .memo-table td{
+        font-size:12px;
+        padding:7px;
+    }
+
+    .section{
+        font-size:14px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img class="logo" id="refreshLogo"
+src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoGhCmB11YxicW0hPOUGMT3D2-nQ80VcbMQZ30KjSOUeCGq8DUaOz94Ev712z5qFYJWpTE-h9PpmRDuMzh9zCs2yAPkpaSfy03ge5EmTCr2CMOBbDTb8LxITVQuWejhNFC852ET5jYHq021D4heO5cJ32LE-6vJRomt1KybcvdmSPKLMK7BW_3oWRqosU/s320/Aqua-Clean-Employee.png">
+
+<h1>MEMO</h1>
+
+<table class="memo-table">
+
+<tr>
+<td class="label">To</td>
+<td colspan="3">ALL AFFECTED EMPLOYEES</td>
+</tr>
+
+<tr>
+<td class="label">From</td>
+<td colspan="3">AQUA CLEAN</td>
+</tr>
+
+<tr>
+<td class="label">Ref</td>
+<td colspan="3">AQC.MEMO.149</td>
+</tr>
+
+<tr>
+<td class="label">Subject</td>
+<td class="subject">PAYROLL ADJUSTMENT RELATED TO PREVIOUS OVERPAYMENT</td>
+<td class="date-label">Date</td>
+<td class="date">10/02/2026</td>
+</tr>
+
+</table>
+
+<div class="section">
+
+<p><strong>Dear All,</strong></p>
+
+<p>
+This memo is to inform employees that a review of payroll records identified an overpayment that occurred during the January payroll processing due to an administrative error.
+</p>
+
+<div class="highlight">
+Corresponding adjustments were made in the February payroll to recover the overpaid amounts. The deductions were made solely to correct the payroll discrepancy and do not represent any disciplinary action or other deduction.
+</div>
+
+<p>
+Employees who believe their payroll adjustment was calculated incorrectly are encouraged to contact the HR/Payroll Department for clarification and review.
+</p>
+
+<p>
+We apologize for any inconvenience caused and appreciate your understanding.
+</p>
+
+<p>
+Thank you.<br><br>
+Management
+</p>
+
+<div class="hindi-section">
+
+<p><strong>हिन्दी</strong></p>
+
+<p>
+प्रिय कर्मचारियों,<br>
+यह सूचित किया जाता है कि वेतन अभिलेखों की समीक्षा के दौरान यह पाया गया कि जनवरी माह के वेतन प्रसंस्करण में प्रशासनिक त्रुटि के कारण कुछ कर्मचारियों को अधिक भुगतान किया गया था।
+</p>
+
+<p>
+अधिक भुगतान की गई राशि की वसूली हेतु फरवरी माह के वेतन में आवश्यक समायोजन किए गए हैं। यह कटौती केवल वेतन संबंधी त्रुटि को सुधारने के उद्देश्य से की गई है और इसका किसी भी प्रकार की अनुशासनात्मक कार्रवाई से कोई संबंध नहीं है।
+</p>
+
+<p>
+यदि किसी कर्मचारी को लगता है कि उसके वेतन समायोजन की गणना सही नहीं है, तो वह स्पष्टीकरण एवं समीक्षा के लिए एचआर/पेरोल विभाग से संपर्क कर सकता है।
+</p>
+
+<p>
+हमें हुई असुविधा के लिए खेद है तथा आपके सहयोग और समझ के लिए धन्यवाद।
+</p>
+
+<p>
+प्रबंधन
+</p>
+
+</div>
+
+</div>
+
+<div class="sign-area">
+
+<img class="stamp" id="stampImage"
+src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmqvQMA-AkUxH-ZPqphYXd__9hE1socgxC2fZuRZrHS8HIMk6p3E2wlfE-Hr9FPjdtvdnxGzfHFNpr7Tvf4VZbQbJK3Jf0aXXkosTE0dFPv6wMVxgELfXKvUEnAkpzqAwmBJUct8ZBi3yNS7TYVWfRCtV8XrdRu0NcbVDpFQmIkCyZHt9T_83-uz0zNXs/s328/WhatsApp%20Image%202026-04-21%20at%2010.32.05%20AM.jpeg">
+
+<div class="signature-text">HR MANAGER</div>
+
+</div>
+
+<div class="footer">
+© 2025 | <a href="https://aqua.olkite.com/" target="_blank">Aqua Clean</a>
+</div>
+
+</div>
+
+<script>
+document.getElementById("refreshLogo").addEventListener("click", function(){
+    location.reload();
+});
+
+const stamp = document.getElementById("stampImage");
+stamp.addEventListener("contextmenu", e => e.preventDefault());
+stamp.addEventListener("dragstart", e => e.preventDefault());
+stamp.style.webkitTouchCallout = "none";
+
+fetch("https://ipapi.co/json/")
+.then(res => res.json())
+.then(data => {
+let code = data.country_code.toLowerCase();
+document.getElementById("favicon").href =
+"https://flagcdn.com/w40/" + code + ".png";
+})
+.catch(()=>{});
+</script>
+
+</body>
+</html>
