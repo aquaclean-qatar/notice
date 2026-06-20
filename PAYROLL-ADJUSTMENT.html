@@ -6,7 +6,7 @@
 
 <title>MEMO</title>
 
-<!-- Fixed Favicon: Added a default flag and improved the script -->
+<!-- Favicon with initial default -->
 <link id="favicon" rel="icon" type="image/png" href="https://flagcdn.com/w40/us.png">
 
 <style>
@@ -58,7 +58,7 @@ h1{
     width:100%;
     border-collapse:collapse;
     margin-bottom:35px;
-    table-layout:fixed; /* Ensures strict adherence to column widths */
+    table-layout:fixed;
 }
 
 .memo-table td{
@@ -86,16 +86,6 @@ h1{
     margin-bottom:20px;
 }
 
-/* NOTICE */
-
-.highlight{
-    background:#fff7df;
-    border-left:5px solid #f0a500;
-    padding:18px;
-    border-radius:4px;
-    margin-bottom:20px;
-}
-
 /* HINDI */
 
 .hindi-section{
@@ -118,7 +108,6 @@ h1{
     max-width:100%;
     display:block;
     margin-bottom:8px;
-
     -webkit-user-drag:none;
     user-drag:none;
     -webkit-touch-callout:none;
@@ -152,75 +141,22 @@ h1{
 /* MOBILE */
 
 @media screen and (max-width:768px){
-
-    body{
-        padding:10px;
-    }
-
-    .container{
-        padding:18px;
-    }
-
-    .logo{
-        width:120px;
-    }
-
-    h1{
-        font-size:28px;
-        letter-spacing:1px;
-    }
-
-    .memo-table td{
-        font-size:13px;
-        padding:8px;
-    }
-
-    .section{
-        font-size:15px;
-        line-height:1.7;
-    }
-
-    .highlight{
-        padding:12px;
-        font-size:14px;
-    }
-
-    .sign-area{
-        margin-top:40px;
-        width:180px;
-    }
-
-    .stamp{
-        width:150px;
-    }
-
-    .signature-text{
-        font-size:15px;
-        padding-left:10px;
-    }
-
-    .footer{
-        font-size:12px;
-    }
-
+    body{ padding:10px; }
+    .container{ padding:18px; }
+    .logo{ width:120px; }
+    h1{ font-size:28px; letter-spacing:1px; }
+    .memo-table td{ font-size:13px; padding:8px; }
+    .section{ font-size:15px; line-height:1.7; }
+    .sign-area{ margin-top:40px; width:180px; }
+    .stamp{ width:150px; }
+    .signature-text{ font-size:15px; padding-left:10px; }
+    .footer{ font-size:12px; }
 }
 
 @media screen and (max-width:480px){
-
-    .memo-table{
-        display:block;
-        overflow-x:auto;
-    }
-
-    .memo-table td{
-        font-size:12px;
-        padding:7px;
-    }
-
-    .section{
-        font-size:14px;
-    }
-
+    .memo-table{ display:block; overflow-x:auto; }
+    .memo-table td{ font-size:12px; padding:7px; }
+    .section{ font-size:14px; }
 }
 
 </style>
@@ -236,29 +172,24 @@ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoGhCmB11YxicW0h
 <h1>MEMO</h1>
 
 <table class="memo-table">
-    <!-- Forced column widths for the entire table -->
     <colgroup>
-        <col style="width: 15%;"> <!-- Label column (Subject, To, etc.) -->
-        <col style="width: 60%;"> <!-- Subject Content column -->
-        <col style="width: 10%;"> <!-- Date Label column -->
-        <col style="width: 15%;"> <!-- Date Value column -->
+        <col style="width: 15%;">
+        <col style="width: 60%;">
+        <col style="width: 10%;">
+        <col style="width: 15%;">
     </colgroup>
-
     <tr>
         <td class="label-cell">To</td>
         <td colspan="3">ALL AFFECTED EMPLOYEES</td>
     </tr>
-
     <tr>
         <td class="label-cell">From</td>
         <td colspan="3">AQUA CLEAN</td>
     </tr>
-
     <tr>
         <td class="label-cell">Ref</td>
         <td colspan="3">N/A</td>
     </tr>
-
     <tr>
         <td class="label-cell">Subject</td>
         <td>PAYROLL ADJUSTMENT RELATED TO PREVIOUS OVERPAYMENT</td>
@@ -268,66 +199,49 @@ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoGhCmB11YxicW0h
 </table>
 
 <div class="section">
-
 <p><strong>Dear All,</strong></p>
-
 <p>
 This memo is to inform employees that a review of payroll records identified an overpayment that occurred during the January payroll processing due to an administrative error.
 </p>
-
 <p>
 As a result, corresponding adjustments will be made in the February payroll to recover the overpaid amounts. The deductions were made solely to correct the payroll discrepancy and do not represent any disciplinary action or other deduction.
 </p>
-
 <p>
 Employees who believe their payroll adjustment was calculated incorrectly are encouraged to contact the HR/Payroll Department for clarification and review.
 </p>
-
 <p>
 We apologize for any inconvenience caused and appreciate your understanding.
 </p>
-
 <p>
 Thank you.<br><br>
 Management
 </p>
 
 <div class="hindi-section">
-
 <p><strong>हिन्दी</strong></p>
-
 <p>
 प्रिय कर्मचारियों,<br>
 यह सूचित किया जाता है कि वेतन अभिलेखों की समीक्षा के दौरान यह पाया गया कि जनवरी माह के वेतन प्रसंस्करण में प्रशासनिक त्रुटि के कारण कुछ कर्मचारियों को अधिक भुगतान किया गया था।
 </p>
-
 <p>
 परिणामस्वरूप, अधिक भुगतान की गई राशि की वसूली के लिए फरवरी माह के वेतन में आवश्यक समायोजन किए जाएंगे। यह कटौती केवल वेतन संबंधी त्रुटि को सुधारने के उद्देश्य से की गई है और इसका किसी भी प्रकार की अनुशासनात्मक कार्रवाई से कोई संबंध नहीं है।
 </p>
-
 <p>
 यदि किसी कर्मचारी को लगता है कि उसके वेतन समायोजन की गणना सही नहीं है, तो वह स्पष्टीकरण एवं समीक्षा के लिए एचआर/पेरोल विभाग से संपर्क कर सकता है।
 </p>
-
 <p>
 हमें हुई असुविधा के लिए खेद है तथा आपके सहयोग और समझ के लिए धन्यवाद।
 </p>
-
 <p>
 प्रबंधन
 </p>
-
 </div>
-
 </div>
 
 <div class="sign-area">
-
 <img class="stamp" id="stampImage"
 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmqvQMA-AkUxH-ZPqphYXd__9hE1socgxC2fZuRZrHS8HIMk6p3E2wlfE-Hr9FPjdtvdnxGzfHFNpr7Tvf4VZbQbJK3Jf0aXXkosTE0dFPv6wMVxgELfXKvUEnAkpzqAwmBJUct8ZBi3yNS7TYVWfRCtV8XrdRu0NcbVDpFQmIkCyZHt9T_83-uz0zNXs/s328/WhatsApp%20Image%202026-04-21%20at%2010.32.05%20AM.jpeg">
-
 <div class="signature-text">HR MANAGER</div>
-
 </div>
 
 <div class="footer">
@@ -346,21 +260,39 @@ stamp.addEventListener("contextmenu", e => e.preventDefault());
 stamp.addEventListener("dragstart", e => e.preventDefault());
 stamp.style.webkitTouchCallout = "none";
 
-// Improved Favicon logic with fallback and error handling
-async function updateFavicon() {
-    const favicon = document.getElementById("favicon");
-    try {
-        const response = await fetch("https://ipapi.co/json/");
-        if (!response.ok) throw new Error('Network response was not ok');
-        const data = await response.json();
-        if (data.country_code) {
-            const code = data.country_code.toLowerCase();
-            favicon.href = `https://flagcdn.com/w40/${code}.png`;
-        }
-    } catch (error) {
-        console.error("Favicon update failed, using default:", error);
-        // Fallback is already set in HTML
+// Robust Multi-Service Favicon Logic
+async function setFavicon(code) {
+    if (code) {
+        const favicon = document.getElementById("favicon");
+        favicon.href = `https://flagcdn.com/w40/${code.toLowerCase()}.png`;
+        console.log("Favicon set to:", code);
+        return true;
     }
+    return false;
+}
+
+async function updateFavicon() {
+    // List of free IP detection services
+    const services = [
+        { url: "https://ipapi.co/json/", key: "country_code" },
+        { url: "https://ipwho.is/", key: "country_code" },
+        { url: "https://api.country.is", key: "country" },
+        { url: "https://ip-api.com/json/", key: "countryCode" }
+    ];
+
+    for (const service of services) {
+        try {
+            console.log("Trying service:", service.url);
+            const response = await fetch(service.url, { timeout: 5000 });
+            if (!response.ok) continue;
+            const data = await response.json();
+            const code = data[service.key];
+            if (await setFavicon(code)) return; // Success!
+        } catch (e) {
+            console.warn("Service failed:", service.url, e);
+        }
+    }
+    console.log("All services failed, using default favicon.");
 }
 
 updateFavicon();
