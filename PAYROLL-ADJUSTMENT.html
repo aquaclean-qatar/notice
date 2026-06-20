@@ -57,7 +57,7 @@ h1{
     width:100%;
     border-collapse:collapse;
     margin-bottom:35px;
-    table-layout:fixed;
+    table-layout:fixed; /* Ensures strict adherence to column widths */
 }
 
 .memo-table td{
@@ -68,22 +68,8 @@ h1{
     word-wrap:break-word;
 }
 
-.label{
-    width:15%;
+.label-cell{
     background:#f7f7f7;
-}
-
-.subject{
-    width:45%;
-}
-
-.date-label{
-    width:10%;
-    background:#f7f7f7;
-}
-
-.date{
-    width:20%;
 }
 
 /* CONTENT */
@@ -188,13 +174,6 @@ h1{
         padding:8px;
     }
 
-    .label,
-    .subject,
-    .date-label,
-    .date{
-        width:auto;
-    }
-
     .section{
         font-size:15px;
         line-height:1.7;
@@ -256,29 +235,35 @@ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoGhCmB11YxicW0h
 <h1>MEMO</h1>
 
 <table class="memo-table">
+    <!-- Forced column widths for the entire table -->
+    <colgroup>
+        <col style="width: 15%;"> <!-- Label column (Subject, To, etc.) -->
+        <col style="width: 60%;"> <!-- Subject Content column -->
+        <col style="width: 10%;"> <!-- Date Label column -->
+        <col style="width: 15%;"> <!-- Date Value column -->
+    </colgroup>
 
-<tr>
-<td class="label">To</td>
-<td colspan="3">ALL AFFECTED EMPLOYEES</td>
-</tr>
+    <tr>
+        <td class="label-cell">To</td>
+        <td colspan="3">ALL AFFECTED EMPLOYEES</td>
+    </tr>
 
-<tr>
-<td class="label">From</td>
-<td colspan="3">AQUA CLEAN</td>
-</tr>
+    <tr>
+        <td class="label-cell">From</td>
+        <td colspan="3">AQUA CLEAN</td>
+    </tr>
 
-<tr>
-<td class="label">Ref</td>
-<td colspan="3">N/A</td>
-</tr>
+    <tr>
+        <td class="label-cell">Ref</td>
+        <td colspan="3">N/A</td>
+    </tr>
 
-<tr>
-<td class="label">Subject</td>
-<td class="subject">PAYROLL ADJUSTMENT RELATED TO PREVIOUS OVERPAYMENT</td>
-<td class="date-label">Date</td>
-<td class="date">10/02/2026</td>
-</tr>
-
+    <tr>
+        <td class="label-cell">Subject</td>
+        <td>PAYROLL ADJUSTMENT RELATED TO PREVIOUS OVERPAYMENT</td>
+        <td class="label-cell">Date</td>
+        <td>10/02/2026</td>
+    </tr>
 </table>
 
 <div class="section">
@@ -345,7 +330,7 @@ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmqvQMA-AkUxH-ZP
 </div>
 
 <div class="footer">
-© 2026 | <a href="https://aqua.olkite.com/" target="_blank">Aqua Clean</a>
+© 2026 | Developed by <a href="https://olkite.com/" target="_blank">Hassan</a>
 </div>
 
 </div>
