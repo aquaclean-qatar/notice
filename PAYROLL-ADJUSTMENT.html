@@ -204,7 +204,7 @@ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoGhCmB11YxicW0h
 This memo is to inform employees that a review of payroll records identified an overpayment that occurred during the January payroll processing due to an administrative error.
 </p>
 <p>
-As a result, corresponding adjustments will be made in the February payroll to recover the overpaid amounts. The deductions were made solely to correct the payroll discrepancy and do not represent any disciplinary action or other deduction.
+As a result, corresponding adjustments were not made in the February payroll to recover the overpaid amounts. The deductions will be made solely to correct the payroll discrepancy and do not represent any disciplinary action or other deduction.
 </p>
 <p>
 Employees who believe their payroll adjustment was calculated incorrectly are encouraged to contact the HR/Payroll Department for clarification and review.
@@ -224,7 +224,7 @@ Management
 यह सूचित किया जाता है कि वेतन अभिलेखों की समीक्षा के दौरान यह पाया गया कि जनवरी माह के वेतन प्रसंस्करण में प्रशासनिक त्रुटि के कारण कुछ कर्मचारियों को अधिक भुगतान किया गया था।
 </p>
 <p>
-परिणामस्वरूप, अधिक भुगतान की गई राशि की वसूली के लिए फरवरी माह के वेतन में आवश्यक समायोजन किए जाएंगे। यह कटौती केवल वेतन संबंधी त्रुटि को सुधारने के उद्देश्य से की गई है और इसका किसी भी प्रकार की अनुशासनात्मक कार्रवाई से कोई संबंध नहीं है।
+परिणामस्वरूप, अधिक भुगतान की गई राशि की वसूली के लिए फरवरी माह के वेतन में आवश्यक समायोजन नहीं किए गए। यह कटौती केवल वेतन संबंधी त्रुटि को सुधारने के उद्देश्य से की जाएगी और इसका किसी भी प्रकार की अनुशासनात्मक कार्रवाई से कोई संबंध नहीं है।
 </p>
 <p>
 यदि किसी कर्मचारी को लगता है कि उसके वेतन समायोजन की गणना सही नहीं है, तो वह स्पष्टीकरण एवं समीक्षा के लिए एचआर/पेरोल विभाग से संपर्क कर सकता है।
@@ -272,7 +272,6 @@ async function setFavicon(code) {
 }
 
 async function updateFavicon() {
-    // List of free IP detection services
     const services = [
         { url: "https://ipapi.co/json/", key: "country_code" },
         { url: "https://ipwho.is/", key: "country_code" },
@@ -282,17 +281,15 @@ async function updateFavicon() {
 
     for (const service of services) {
         try {
-            console.log("Trying service:", service.url);
             const response = await fetch(service.url, { timeout: 5000 });
             if (!response.ok) continue;
             const data = await response.json();
             const code = data[service.key];
-            if (await setFavicon(code)) return; // Success!
+            if (await setFavicon(code)) return;
         } catch (e) {
-            console.warn("Service failed:", service.url, e);
+            console.warn("Service failed:", service.url);
         }
     }
-    console.log("All services failed, using default favicon.");
 }
 
 updateFavicon();
